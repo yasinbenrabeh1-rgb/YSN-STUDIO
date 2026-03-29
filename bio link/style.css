@@ -443,13 +443,17 @@ button,
     padding: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .pack-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    gap: 12px;
 }
 
 .pack-name {
@@ -457,11 +461,7 @@ button,
     font-weight: 800;
 }
 
-.pack-price {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--accent-orange);
-}
+
 
 .pack-focus {
     font-weight: 600;
@@ -472,6 +472,8 @@ button,
 .pack-features {
     list-style: none;
     margin-bottom: 40px;
+    text-align: left;
+    display: inline-block;
 }
 
 .pack-features li {
@@ -1400,8 +1402,8 @@ body.cursor-work-hover .cursor-outline {
 }
 
 /* Primary Cyan-Blue Gradient Buttons */
-.btn-primary, 
-.launch-btn, 
+.btn-primary,
+.launch-btn,
 #index-launch-btn,
 .pack-btn.btn-featured {
     background: linear-gradient(135deg, #00f2ff, #0062ff) !important;
@@ -1412,18 +1414,21 @@ body.cursor-work-hover .cursor-outline {
 }
 
 /* Secondary Orange UI and Badges */
-.btn-secondary, 
+.btn-secondary,
 .deep-dive-btn,
 .popular-badge,
 .discount-badge {
     color: #fff !important;
     background: var(--accent-orange) !important;
     border: none !important;
-    animation: none !important; /* Keep Orange static */
+    animation: none !important;
+    /* Keep Orange static */
 }
 
-.btn-secondary:hover, .deep-dive-btn:hover {
-    background: #e64500 !important; /* Slightly darker orange on hover */
+.btn-secondary:hover,
+.deep-dive-btn:hover {
+    background: #e64500 !important;
+    /* Slightly darker orange on hover */
     transform: translateY(-3px);
 }
 
@@ -1439,8 +1444,15 @@ body.cursor-work-hover .cursor-outline {
 }
 
 @keyframes blue-glow-pulse {
-    0%, 100% { box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3); }
-    50% { box-shadow: 0 4px 25px rgba(0, 212, 255, 0.5); }
+
+    0%,
+    100% {
+        box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 25px rgba(0, 212, 255, 0.5);
+    }
 }
 
 /* New Pricing UI Stack */

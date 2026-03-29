@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('nav-active');
             menuToggle.classList.toggle('toggle-animation');
         });
-        
+
         // Close menu on link click
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {

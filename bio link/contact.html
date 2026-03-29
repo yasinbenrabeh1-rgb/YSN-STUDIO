@@ -310,14 +310,18 @@
                 <form id="contact-form" novalidate>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
                         <div>
-                            <label style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">First Name</label>
+                            <label
+                                style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">First
+                                Name</label>
                             <input type="text" id="fname" name="fname" placeholder="e.g. Ahmed" required
                                 style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 16px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; box-sizing: border-box; transition: border-color 0.3s, box-shadow 0.3s;"
                                 onfocus="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 0 12px rgba(0,212,255,0.15)'"
                                 onblur="this.style.borderColor='rgba(255,255,255,0.1)';this.style.boxShadow='none'">
                         </div>
                         <div>
-                            <label style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">Last Name</label>
+                            <label
+                                style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">Last
+                                Name</label>
                             <input type="text" id="lname" name="lname" placeholder="e.g. Khalil" required
                                 style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 16px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; box-sizing: border-box; transition: border-color 0.3s, box-shadow 0.3s;"
                                 onfocus="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 0 12px rgba(0,212,255,0.15)'"
@@ -325,23 +329,30 @@
                         </div>
                     </div>
                     <div style="margin-bottom: 16px;">
-                        <label style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">Phone Number</label>
+                        <label
+                            style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">Phone
+                            Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="+216 55 123 456" required
                             style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 16px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; box-sizing: border-box; transition: border-color 0.3s, box-shadow 0.3s;"
                             onfocus="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 0 12px rgba(0,212,255,0.15)'"
                             onblur="this.style.borderColor='rgba(255,255,255,0.1)';this.style.boxShadow='none'">
                     </div>
                     <div style="margin-bottom: 24px;">
-                        <label style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">Service Type</label>
+                        <label
+                            style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--secondary-text); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.08em;">Service
+                            Type</label>
                         <select id="service" name="service" required
                             style="width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 16px; color: var(--text-color); font-family: inherit; font-size: 0.9rem; box-sizing: border-box; appearance: none; -webkit-appearance: none; transition: border-color 0.3s;"
                             onfocus="this.style.borderColor='var(--accent-blue)'"
                             onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
                             <option value="" disabled selected style="background:#0d0d0d;">Select a service…</option>
                             <option value="START Pack (Bio-Link)" style="background:#0d0d0d;">Bio-Link (START)</option>
-                            <option value="PRO Pack (Branding)" style="background:#0d0d0d;">Personal Branding (PRO)</option>
-                            <option value="BUSINESS Pack (Full Studio)" style="background:#0d0d0d;">Full Studio Pack (BUSINESS)</option>
-                            <option value="Maintenance / Update" style="background:#0d0d0d;">Content Update / Maintenance</option>
+                            <option value="PRO Pack (Branding)" style="background:#0d0d0d;">Personal Branding (PRO)
+                            </option>
+                            <option value="BUSINESS Pack (Full Studio)" style="background:#0d0d0d;">Full Studio Pack
+                                (BUSINESS)</option>
+                            <option value="Maintenance / Update" style="background:#0d0d0d;">Content Update /
+                                Maintenance</option>
                         </select>
                     </div>
                     <button type="submit" id="launch-btn"
@@ -413,7 +424,7 @@
             circle.style.left = `${btn.clientWidth / 2 - diameter / 2}px`;
             circle.style.top = `${btn.clientHeight / 2 - diameter / 2}px`;
             btn.appendChild(circle);
-            
+
             setTimeout(() => {
                 circle.remove();
                 form.style.display = 'none';
@@ -421,7 +432,7 @@
 
                 const msg = `Hi Yasin, I am ${fname} ${lname}. My phone number is ${phone}. I am interested in the ${service} service. Let's talk!`;
                 const whatsappUrl = `https://wa.me/21653282876?text=${encodeURIComponent(msg)}`;
-                
+
                 window.open(whatsappUrl, '_blank');
             }, 500);
         });
